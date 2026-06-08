@@ -199,20 +199,48 @@ function showResult(data) {
     data.shortUrl;
 
   // copy button
-  copyButton.onclick = async () => {
+copyButton.onclick = async () => {
 
-    await navigator.clipboard.writeText(
-      currentUrl
-    );
+    try {
 
-    Toast.show(
-      "Copied!",
-      currentUrl,
-      "success"
-    );
-  };
+        if (navigator.clipboard) {
+
+            await navigator.clipboard.writeText(currentUrl);
+
+        } else {
+
+            const textarea = document.createElement("textarea");
+
+            textarea.value = currentUrl;
+
+            document.body.appendChild(textarea);
+
+            textarea.select();
+
+            document.execCommand("copy");
+
+            document.body.removeChild(textarea);
+        }
+
+        Toast.show(
+            "Copied!",
+            currentUrl,
+            "success"
+        );
+
+    } catch (err) {
+
+        console.error(err);
+
+        Toast.show(
+            "Copy failed",
+            "",
+            "error"
+        );
+    }
+};
+
 }
-
 
   async function handleShorten() {
 
