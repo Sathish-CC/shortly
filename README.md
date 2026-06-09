@@ -1,5 +1,5 @@
 # 🚀 Shortly - Cloud Native URL Shortener with CI/CD & Monitoring
-![Architecture](screenshots/Architecture image.png)
+![Architecture](screenshots/Architecture.png)
 ## 📌 Project Overview
 
 Shortly is a modern URL Shortener application deployed on AWS using a complete DevOps workflow.
