@@ -126,25 +126,26 @@ Provides:
 
 ## 📸 Project Screenshots
 
-### Application
+## Application
 
-Add application screenshot here.
+![Application](screenshots/App.png)
 
-### Jenkins CI/CD Pipeline
+## Jenkins CI/CD Pipeline
 
-Add Jenkins pipeline screenshot here.
+![Jenkins](screenshots/Jenkins(1).png)
+![Jenkins](screenshots/Jenkins(2).png)
 
-### Kubernetes Deployment
+## Kubernetes Deployment
 
-Add kubectl get pods screenshot here.
+![Kubernetes](screenshots/Kubernetes.png)
 
-### Prometheus Monitoring
+## Prometheus Monitoring
 
-Add Prometheus targets screenshot here.
+![Prometheus](screenshots/Prometheus.png)
 
-### Grafana Dashboard
+## Grafana Dashboard
 
-Add Grafana dashboard screenshot here.
+![Grafana](screenshots/Grafana.png)
 
 ---
 
